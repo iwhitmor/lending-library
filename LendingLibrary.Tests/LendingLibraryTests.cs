@@ -3,11 +3,18 @@ using Xunit;
 
 namespace LendingLibrary.Tests
 {
-    public class UnitTest1
+    public class LendingLibraryTests
     {
         [Fact]
-        public void Test1()
+        public void Bag_starts_empty()
         {
+            //Arrange
+            Bag<bool> bag = new Bag<bool>();
+
+            //Act
+
+
+            //Assert
 
         }
     }

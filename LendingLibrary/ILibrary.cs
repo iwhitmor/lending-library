@@ -1,9 +1,17 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 
 namespace LendingLibrary
 {
     public interface ILibrary : IReadOnlyCollection<Book>
     {
+        public int Count => throw new System.NotImplementedException();
+
+        public IEnumerator<Book> GetEnumerator()
+        {
+            throw new System.NotImplementedException();
+        }
+
         /// <summary>
         /// Add a Book to the library.
         /// </summary>
@@ -14,6 +22,11 @@ namespace LendingLibrary
         /// </summary>
         /// <returns>The Book, or null if not found.</returns>
         Book Borrow(string title);
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
 
         /// <summary>
         /// Return a Book to the library.
