@@ -6,7 +6,14 @@ namespace LendingLibrary
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Lending Library");
         }
+    }
+
+    public class Book
+    {
+        public string Title { get; set; }
+
+        public string Author { get; set; }
     }
 }
