@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace LendingLibrary
 {
@@ -6,7 +7,7 @@ namespace LendingLibrary
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Lending Library");
         }
     }
 }
